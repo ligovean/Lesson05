@@ -2,7 +2,6 @@ public class Main {
     public static void main(String[] args) {
         singleThread();
         multyThread();
-        System.out.println("END");
     }
 
     public static void singleThread(){
@@ -18,7 +17,6 @@ public class Main {
         }
         //Завершение замера времени
         System.out.printf("Время выполнения операций в однопоточном режиме: %d ms. \n",(System.currentTimeMillis() - a));
-        //System.out.println("Последний элемент массива: " + arr[size-1]);
     }
 
     public static void multyThread(){
@@ -69,7 +67,5 @@ public class Main {
 
         //Завершение замера времени
         System.out.printf("Время выполнения операций в многопоточном режиме: %d ms. \n",(System.currentTimeMillis() - a));
-        //System.out.println("Последний элемент массива: " + arr[size-1]);
-
-    };
+    }
 }
